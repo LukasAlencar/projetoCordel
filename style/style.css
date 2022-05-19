@@ -9,6 +9,7 @@
     --font1: Verdana, Geneva, Tahoma, sans-serif;
     --font2: 'Passion One', cursive;
     --font3: 'Sriracha', cursive;
+    
 }
 
 *{
@@ -24,8 +25,26 @@
 }
 
 .imagem{
-    background-color: rgba(0, 0, 0, 0.473);
+    
     color: white;
+    text-shadow: 1px 1px 3px black;
+    box-shadow: inset 0px 0px 13px 0px black;
+    background-attachment: fixed;
+    border-radius: 10px;
+    margin: 0px 10px;
+    
+}
+
+#img1{
+    background-image: url('../img/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+#img2{
+    background-image: url('../img/background002.jpg');
+    background-position: right center;
+    background-size: cover;
 }
 
 html, body{
@@ -69,6 +88,7 @@ header a:hover, footer a:hover{
 main{
     font-family: var(--font3);
     font-size: 2.6vw;
+    background-color: white;
 }
 
 
@@ -77,6 +97,10 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+}
+
+section > p{
+    padding-bottom: 1em;
 }
 
 section.imagem > p{
@@ -92,4 +116,5 @@ footer{
     text-align: center;
     color: white;
     padding: 10px;
+    font-size: 0.7em;
 }
